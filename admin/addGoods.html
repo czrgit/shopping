@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新商品上架</title>
+
+</head>
+
+<body>
+	<h2>添加新商品上架</h2>
+    <form method="post" action="addGoods_pass.php" enctype="multipart/form-data">
+    <table>
+    	<caption >添加商品信息</caption>
+    	<tr>
+        	<th>商品名称：</th>
+            <td><input type="text" name="goodsName" /></td>
+        </tr>
+      <tr>
+	<th>商品图片:</th>
+	<td><input type="file" name="goodsFile" value="浏览"/></td>
+	</tr>
+        <tr>
+        	<th>商品单价：</th>
+            <td><input type="text" name="goodsPrice" /></td>
+        </tr>
+        <tr>
+        	<th>商品库存：</th>
+            <td><input type="text" name="goodsNum" /></td>
+        </tr>
+        <tr>
+        	<th>商品简介：</th>
+            <td><textarea name="goodsInfo" rows="10" cols="30"></textarea></td>
+        </tr>
+        <tr>
+        	<td colspan="2" align="center"><input type="submit" value="提交" /></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
